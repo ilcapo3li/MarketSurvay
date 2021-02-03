@@ -22,7 +22,7 @@
 		<div class="splash-page abs-fs vflow bg-cover">
 			<div class="sven-scene halign-center">
 				<div class="centered center-center">
-					<p>Stomp is a typographic intro for your product. Just good rhythm and typography. In the basic version, it contains exactly 100 words.</p>
+					<p>Delay - Free <br>Take care of your shipment Fast delivery …. fast money transfer.</p>
 					<p style="margin-bottom: 0"><a class="st-btn btn-fill play-button">Get Started</a></p>
 				</div>
 			</div>

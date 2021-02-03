@@ -516,7 +516,7 @@
 			<div id="scene-66" class="sven-slide">
 				<div class="content-container">
 					<h1 class="lt-main font2x" data-sin="animation: stomp-fx66-in">
-						<img class="tf-logo" src={{asset("assets/images/themeforest-dark-background.png")}} alt="themeforest"/>
+						<img class="tf-logo" src={{asset("assets/images/local/delayFree.png")}} alt="themeforest"/>
 					</h1>
 				</div>
 			</div>

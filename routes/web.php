@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingDetailsController;
 use App\Http\Controllers\MarketDataController;
+use App\Http\Controllers\SupscriptionController;
 
 
 /*
@@ -18,5 +19,6 @@ use App\Http\Controllers\MarketDataController;
 
 Route::get('/',[LandingDetailsController::class, 'home']);
 Route::post('/agent/engagement',[MarketDataController::class, 'store']);
+Route::post('/supscription',[SupscriptionController::class, 'store']);
 Route::get('/market',[MarketDataController::class, 'index']);
 

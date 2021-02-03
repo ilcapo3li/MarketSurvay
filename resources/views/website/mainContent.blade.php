@@ -92,7 +92,7 @@
 											<p><span>العنوان</span><br>370 Concho Dr<br>Gold Canyon,AZ, 85118</p>
 										</div>
 										<div class="col-xs-12 col-sm-4">
-											<p><span>الايميل الخاص بنا</span><br><a href="mailto:svencreations@gmail.com?Subject=Stomp%20Inquiry">svencreations@gmail.com</a></p>
+											<p><span>البريد الالكتروني</span><br><a href="mailto:svencreations@gmail.com?Subject=Stomp%20Inquiry">svencreations@gmail.com</a></p>
 										</div>
 										<div class="col-xs-12 col-sm-4">
 											<p><span>رقم الهاتف</span><br><a href="tel:+12025550161">+1 (202) 555-0161</a></p>
@@ -106,7 +106,7 @@
 						<section id="the-gallery" class="portfolio"> <!-- ## Start PORTFOLIO section ## -->
 							<div class="row">
 								<div class="col-xs-12">
-									<h3>حدماتنا</h3>
+									<h3>خدماتنا</h3>
 									<p>
 									 نعمل وفق استراتيجيات واضحة واحترافية
 									 مدربون على الاهتمام والعناية بشحنتك بشكل خاص جداً
@@ -116,11 +116,11 @@
 
 									<div class="st-gallery row" itemscope itemtype="http://schema.org/ImageGallery"><!-- %% Start GALLERY %% -->
 										<figure class="col-xs-12 col-sm-6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-											<a class="ps-link" href={{asset("assets/images/local/stomp-1.jpg")}} itemprop="contentUrl" data-size="1920x1280">
-												<img class="ofit gpu-hack lazyload" data-src={{asset("assets/images/local/stomp-1.jpg")}} itemprop="thumbnail" alt="Best of both worlds" />
+											<a class="ps-link" href={{asset("assets/images/local/stores.jfif")}} itemprop="contentUrl" data-size="1920x1280">
+												<img class="ofit gpu-hack lazyload" data-src={{asset("assets/images/local/stores.jfif")}} itemprop="thumbnail" alt="Best of both worlds" />
 												<p class="pszoom"></p>
 											</a>
-											<figcaption itemprop="caption description">التخزين برنامج خاص بالمستودعات</figcaption>
+											<figcaption itemprop="caption description">التخزين ببرامج خاصة بالمستودعات</figcaption>
 
 										</figure>
 
@@ -133,8 +133,8 @@
 
 										</figure>
 										<figure class="col-xs-12 col-sm-6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-											<a class="ps-link" href={{asset("assets/images/local/stores.jfif")}} itemprop="contentUrl" data-size="1920x1280">
-												<img class="ofit gpu-hack lazyload" data-src={{asset("assets/images/local/stores.jfif")}} itemprop="thumbnail" alt="Piece of cake" />
+											<a class="ps-link" href={{asset("assets/images/local/stomp-1.jpg")}} itemprop="contentUrl" data-size="1920x1280">
+												<img class="ofit gpu-hack lazyload" data-src={{asset("assets/images/local/stomp-1.jpg")}} itemprop="thumbnail" alt="Piece of cake" />
 												<p class="pszoom"></p>
 											</a>
 											<figcaption itemprop="caption description">  التغليف بأسعار رمزية </figcaption>

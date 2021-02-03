@@ -13,7 +13,7 @@ License: You must have a valid license purchased only from themeforest(the above
 -->
 <html lang="en" >
 	<!-- begin::Head -->
-	
+		@include('admin.layouts.header')
 	<!-- end::Head -->
     <!-- end::Body -->
 	<body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"  >
@@ -6099,6 +6099,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			</li>
 		</ul>
 	
+		@include('admin.layouts.footer')
 	</body>
 	<!-- end::Body -->
 </html>

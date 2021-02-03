@@ -22,3 +22,9 @@ Route::post('/agent/engagement',[MarketDataController::class, 'store']);
 Route::post('/supscription',[SupscriptionController::class, 'store']);
 Route::get('/market',[MarketDataController::class, 'index']);
 
+
+
+
+Route::get('/bicomatics/admin',function(){
+    return view('admin.main');
+});

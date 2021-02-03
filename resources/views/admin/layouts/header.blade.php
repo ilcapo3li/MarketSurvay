@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8" />
     <title>
-        Metronic | Dashboard
+        Delay | Free
     </title>
     <meta name="description" content="Latest updates and statistic charts">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,10 +19,10 @@
     <!--end::Web font -->
     <!--begin::Base Styles -->  
     <!--begin::Page Vendors -->
-    <link href="assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="{{asset("assets/vendors/custom/fullcalendar/fullcalendar.bundle.css")}}" rel="stylesheet" type="text/css" />
     <!--end::Page Vendors -->
-    <link href="assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="{{asset("assets/vendors/base/vendors.bundle.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset("assets/demo/default/base/style.bundle.css")}}" rel="stylesheet" type="text/css" />
     <!--end::Base Styles -->
-    <link rel="shortcut icon" href="assets/demo/default/media/img/logo/favicon.ico" />
+    <link rel="shortcut icon" href="{{asset("assets/demo/default/media/img/logo/favicon.ico")}}" />
 </head>

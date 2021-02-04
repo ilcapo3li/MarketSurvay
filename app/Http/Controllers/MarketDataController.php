@@ -39,19 +39,20 @@ class MarketDataController extends Controller
             'name' => 'required|string',
             'phone' => 'required|string|unique:market_data,phone',
             'type' => 'required|string',
-            'location' => 'required|integer|exits:locations,id',
+            'location' => 'required|integer|exists:locations,id',
             'message' => 'required|string',
             'note' => 'string',
         ]);
-            $market =  new MarketData(); 
+            $market =  new MarketData();
             $market->name = $request->name ; 
             $market->phone = $request->phone ; 
             $market->type = $request->type ; 
             $market->locations = $request->locations ; 
             $market->message = $request->message ; 
-            $market->note = $request->note ; 
-            $market->save(); 
-        return response()->json(["message"=>"Data Saved"]); 
+            $market->note = $request->note ;
+            $market->save();
+
+        return response()->json(["message"=>"Data Saved"]);
     }
 
     /**

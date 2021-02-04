@@ -39,7 +39,7 @@ class MarketDataController extends Controller
             'name' => 'required|string',
             'phone' => 'required|string|unique:market_data,phone',
             'type' => 'required|string',
-            'locations' => 'required|integer|exits:locations,id',
+            'location' => 'required|integer|exits:locations,id',
             'message' => 'required|string',
             'note' => 'string',
         ]);

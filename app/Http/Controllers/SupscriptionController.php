@@ -35,7 +35,13 @@ class SupscriptionController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $request->validate([
+            'email' => 'required|email|unique:supscriptions,email',
+        ]);
+            $supscription = new Supscription();
+            $supscription->email = $request->email;
+            $supscription->save();
+        return response()->json(["message"=>"Data Saved"]) ;
     }
 
     /**

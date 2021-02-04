@@ -2,24 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\LandingDetails;
 use App\Models\Location;
 use Illuminate\Http\Request;
 
-class LandingDetailsController extends Controller
+class LocationController extends Controller
 {
-
-     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function home()
-    {
-        // LandingDetails::first();
-        $locations = Location::all();
-        return view('website.home',compact('locations'));
-    }
     /**
      * Display a listing of the resource.
      *
@@ -48,18 +35,27 @@ class LandingDetailsController extends Controller
      */
     public function store(Request $request)
     {
-        // new LandingDetails();
-
+        //
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\Location  $location
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Location $location)
+    {
+        //
+    }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\LandingDetails  $landingDetails
+     * @param  \App\Models\Location  $location
      * @return \Illuminate\Http\Response
      */
-    public function edit(LandingDetails $landingDetails)
+    public function edit(Location $location)
     {
         //
     }
@@ -68,13 +64,22 @@ class LandingDetailsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\LandingDetails  $landingDetails
+     * @param  \App\Models\Location  $location
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, LandingDetails $landingDetails)
+    public function update(Request $request, Location $location)
     {
-        //$landingDetails
+        //
     }
 
-   
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\Location  $location
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Location $location)
+    {
+        //
+    }
 }

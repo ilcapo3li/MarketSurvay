@@ -15,6 +15,13 @@ class CreateMarketDataTable extends Migration
     {
         Schema::create('market_data', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('phone')->unique();
+            $table->enum('type',['merchent','tayar','shipment']);
+            $table->unsignedBigInteger('location_id');
+            $table->foreign('location_id')->references('id')->on('locations');
+            $table->mediumText('message')->nullable();
+            $table->mediumText('note')->nullable();
             $table->timestamps();
         });
     }

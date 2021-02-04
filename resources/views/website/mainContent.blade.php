@@ -67,22 +67,50 @@
 										@method('POST')
 										<div class="col-xs-12 col-sm-6">
 											<div class="form-group">
-												<input type="text" id="contName" class="form form-control" placeholder="أدخل اسمك ......" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name...'" name="contName" required="">
+												<input type="text" id="name" class="form form-control" placeholder="أدخل اسمك ......" onfocus="this.placeholder = ''" onblur="this.placeholder = ''Your Name...''" name="name" required="">
 											</div>
 										</div>
 										<div class="col-xs-12 col-sm-6">
 											<div class="form-group">
-												<input type="email" id="contMail" class="form form-control" placeholder="بريدك الالكنروني ......." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email...'" name="contMail" required="">
+												<input type="email" id="phone" class="form form-control" placeholder="رقم الهاتف  ......." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Phone Number...'" name="phone" required="">
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6">
+											<div class="form-group">
+												<select  class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true"  id="location"   name="location" required="">
+													<option value="">اختر منطقة تقديم خدماتك</option>
+													@forelse($locations as $location)
+														<option value="{{$location->id}}">{{$location->name}}</option>
+													@empty
+													@endforelse
+												</select>
+											</div>
+										</div>
+										
+										<div class="col-xs-12 col-sm-6">
+											<div class="form-group">
+												<select class="form-control  select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true"  id="type" class="form form-control"  name="type" required="">
+													<option value="">اختر الوصف الملائم لخدماتك</option>
+													<option value="merchent">تاجر</option>
+													<option value="tayar">مندوب شحن</option>
+													<option value="shipment">شركة شحن</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-xs-12 hide" id="hideMessage">
+											<div class="form-group">
+												<textarea id="message" class="form form-control" placeholder="رسالتك للتواصل معنا ........" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Message...'" name="message" required=""></textarea>
+											</div>
+										</div>
+										
+										<div class="col-xs-12">
+											<div class="form-group">
+												<textarea id="note" class="form form-control" placeholder="ملاحظاتك للتواصل معنا ........" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Note...'" name="note" required=""></textarea>
 											</div>
 										</div>
 										<div class="col-xs-12">
 											<div class="form-group">
-												<textarea id="contMessage" class="form form-control" placeholder="رسالتك للتواصل معنا ........" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Message...'" name="contMessage" required=""></textarea>
-											</div>
-										</div>
-										<div class="col-xs-12">
-											<div class="form-group">
-												<button type="submit" id="contSubmit" class="st-btn btn-bordered">ارسل رسالتك</button>
+												<button type="submit" id="" class="st-btn btn-bordered">ارسل رسالتك</button>
 											</div>
 										</div>
 									</form><!-- %% End CONTACT FORM %% -->

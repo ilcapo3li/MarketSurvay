@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSupscriptionsTable extends Migration
+class CreateLocationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateSupscriptionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('supscriptions', function (Blueprint $table) {
+        Schema::create('locations', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->unique();
+            $table->integer('parent_id')->default(0);
+            $table->string('name');
+            $table->integer('ordered')->default(0);
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateSupscriptionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('supscriptions');
+        Schema::dropIfExists('locations');
     }
 }

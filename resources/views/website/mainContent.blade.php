@@ -97,7 +97,7 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-xs-12 hide" id="hideMessage">
+										<div class="col-xs-12" id="hideMessage">
 											<div class="form-group">
 												<textarea id="message" class="form form-control" placeholder="رسالتك للتواصل معنا ........" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Message...'" name="message" required=""></textarea>
 											</div>
@@ -227,3 +227,32 @@
 			</div>
 		</div>
 	</div> 
+
+	@section("customJS")
+		<script>
+			$('#hideMessage').hide();
+			$( document ).ready(function() {
+				$('#type').change(function(){
+					var type = $('#type').val();
+					switch(type){
+						case 'merchent':
+							$('#message').attr('placeholder','نوعية منتجاتك التي تعمل بها........')
+							$('#hideMessage').show();
+						break;
+
+						case 'tayar':
+							$('#message').attr('placeholder','اكتب عن خبراتك السابقة........')
+							$('#hideMessage').show();
+						break;
+
+						case 'shipment':
+							$('#message').attr('placeholder','ما نوعية خدمات النقل التي تقدمها........')
+							$('#hideMessage').show();
+						break;
+						default:$('#hideMessage').hide();
+					}
+			    });
+			});
+		
+		</script>
+	@endsection

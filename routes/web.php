@@ -26,5 +26,10 @@ Route::get('/market',[MarketDataController::class, 'index']);
 
 
 Route::get('/bicomatics/admin',function(){
-    return view('admin.main');
+    return view('admin.dashboard');
+});
+
+
+Route::get('/bicomatics/admin/login',function(){
+    return view('admin.login');
 });

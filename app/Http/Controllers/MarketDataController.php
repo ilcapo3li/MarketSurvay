@@ -47,7 +47,7 @@ class MarketDataController extends Controller
             $market->name = $request->name ; 
             $market->phone = $request->phone ; 
             $market->type = $request->type ; 
-            $market->locations = $request->locations ; 
+            $market->location_id = $request->location ; 
             $market->message = $request->message ; 
             $market->note = $request->note ;
             $market->save();

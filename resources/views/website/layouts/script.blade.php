@@ -28,7 +28,7 @@ Compiled JS plugins
                e.error ? (responseMessage.css("visibility", "hidden"), responseMessage.removeClass("error success").addClass("error").css("visibility", "visible").html('<i class="fa fa-times"></i>' + e.message), waitMessage.prop("disabled", !1)) : (responseMessage.css("visibility", "hidden"), responseMessage.removeClass("error success").addClass("success").css("visibility", "visible").html('<i class="fa fa-check"></i>' + e.message))
            },
            error: function() {
-            responseMessage.css("visibility", "hidden"), responseMessage.removeClass("error success").addClass("error").css("visibility", "visible").html('<i class="fa fa-times"></i>Problem connecting to server. Please try again'), waitMessage.prop("disabled", !1)
+            responseMessage.css("visibility", "hidden"), responseMessage.removeClass("error success").addClass("error").css("visibility", "visible").html('<i class="fa fa-times"></i>Problem Connecting to server. Please try again'), waitMessage.prop("disabled", !1)
            }
        }), e.preventDefault()
    })

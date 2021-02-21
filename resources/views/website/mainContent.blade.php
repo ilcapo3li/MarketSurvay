@@ -157,7 +157,7 @@
 												<img class="ofit gpu-hack lazyload" data-src={{asset("assets/images/local/representative.jfif")}} itemprop="thumbnail" alt="Once in a blue moon" />
 												<p class="pszoom"></p>
 											</a>
-											<figcaption itemprop="caption description">التوصيل خلال 24 ساعة بدون اي تأخير</figcaption>
+											<figcaption itemprop="caption description">التوصيل خلال 24 ساعة</figcaption>
 
 										</figure>
 										<figure class="col-xs-12 col-sm-6" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">

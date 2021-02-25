@@ -17,7 +17,8 @@
                                 Sign In To Admin
                             </h3>
                         </div>
-                        <form class="m-login__form m-form" action="">
+                        <form class="m-login__form m-form" action="{{route('admin.login')}}" method= "post">
+                        @csrf
                             <div class="form-group m-form__group">
                                 <input class="form-control m-input"   type="text" placeholder="Email" name="email" autocomplete="off">
                             </div>
@@ -59,8 +60,10 @@
                                 <input class="form-control m-input" type="text" placeholder="Fullname" name="fullname">
                             </div>
                             <div class="form-group m-form__group">
+                            
                                 <input class="form-control m-input" type="text" placeholder="Email" name="email" autocomplete="off">
                             </div>
+                            
                             <div class="form-group m-form__group">
                                 <input class="form-control m-input" type="password" placeholder="Password" name="password">
                             </div>

@@ -13,6 +13,6 @@ class LocationSeeder extends Seeder
      */
     public function run()
     {
-        DB::unprepared(file_get_contents(app_path('/seed/locations.sql')));
+        DB::unprepared(file_get_contents(app_path('/Seed/locations.sql')));
     }
 }

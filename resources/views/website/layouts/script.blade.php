@@ -8,6 +8,8 @@ Compiled JS plugins
 <script src="{{asset("assets/js/combined/stomp-motion.min.js")}}"></script>
 <script src="{{asset("assets/js/backgrounds/bits.min.js")}}"></script>
 <script src="{{asset("assets/js/main.min.js")}}"></script>
+<!-- add additional Custom JS Code -->
+@yield('js')
 
 <script>
     $("[type='submit']").on("click submit", function(e) {
